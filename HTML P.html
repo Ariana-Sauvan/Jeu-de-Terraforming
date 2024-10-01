@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/CSS P.css">
+        <title>Projet - Dynamic Web Programming</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="htop">
+                <div class="tasks">
+                    <div>
+                        <p class="chapitre">CHAPITRE 1:DESERTIQUE</p>
+                    </div>
+                    <div>
+                        <button class="btntask" id="0">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Water_Bottle.png">
+                            FABRIQUER: BOUTEILLE D'EAU
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="1">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Oxygen_Capsule.png">
+                            FABRIQUER: BOMBONNE D'OXYGÈNE
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="2">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/space-capsule(3).png">
+                            FABRIQUER: HABITACLE DE SURVIE
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="3">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Microchip_-_Torch.png">
+                            FABRIQUER: LAMPE TORCHE
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="4">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Drill_T1.png">
+                            FABRIQUER: FOREUSE
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="5">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Heater_T1.png">
+                            FABRIQUER: RADIATEUR
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btntask" id="6">
+                            <img class="star" src="../img/interface/sparkle.png">
+                            <img src="../img/machines/Vegetube_T1.png">
+                            FABRIQUER: PLANTATION
+                        </button>
+                    </div>
+                </div>
+                <div class="button">
+                    <img class="Fleche" src="../img/interface/Fleche G.png">
+                </div>
+                <div class="infodroit">
+                    <div>
+                        <div class="idterra">
+                            <p>Indice de terraformation</p>
+                            <p><span class="time">0</span> Ti</p>
+                        </div>
+                        <div>
+                            <img src="../img/interface/worldwide.png">
+                        </div>
+                    </div>
+                    <table>
+                        <tr class="tab1color">
+                            <td class="tab1row">
+                                <p>Eau</p>
+                            </td>
+                            <td class="tab1row">
+                                <p>Oxygene</p>
+                            </td>
+                            <td class="tab1row"  style="display: none;">
+                                <p>Food</p>
+                            </td>
+                            <td class="tab1row">
+                                <p>Foreuse</p>
+                            </td>
+                            <td class="tab1row">
+                                <p>Radiateur</p>
+                            </td>
+                            <td>
+                                <p>Plantation</p>
+                            </td>
+                        </tr>
+                        <tr class="tab2color">
+                            <td class="tab2row">
+                                <p>0</p>
+                            </td>
+                            <td class="tab2row">
+                                <p>0</p>
+                            </td>
+                            <td class="tab2row"  style="display: none;">
+                                <p>0</p>
+                            </td>
+                            <td class="tab2row">
+                                <p>0</p>
+                            </td>
+                            <td class="tab2row">
+                                <p>0</p>
+                            </td>
+                            <td id="tab2rowlast" class="tab2row">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="bigbox">
+                <div class="boxcontenur">
+                    <div class="minerais" id="m1"></div>
+                    <div class="minerais" id="m2"></div>
+                    <div class="minerais" id="m3"></div>
+                </div>
+                <div class="boxcontenur">
+                    <div class="minerais" id="m4"></div>
+                    <div class="minerais" id="m5"></div>
+                    <div class="minerais" id="m6"></div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <img id="capsule" src="../img/machines/capsule.png">
+        </div>
+        <div class="end" style="display: none;">
+            <h1>Tu as perdu ton score est de : <span class="score"></span></h1>
+        </div>
+         <div class="goodend" style="display: none;">
+            <h1>Vous avez réussi à terraformer la planète, <br>votre score est de : <span class="score2"></span> points.</h1>
+        </div>
+        <footer>
+            <div>
+                <div>
+                    <button id="manger" style="display: none;">Manger</button>
+                    <button id="boire" style="display: none;">Boire l'eau</button>
+                    <button id="respirer" style="display: none;">Prendre de l'oxygène</button>
+                    <button id="capsule" style="display: none;">Bouton passer à la base pour reprendre de l'oxygène. Apparait si hab. de survie construit</button>
+                </div>
+                <div class="viecontainer">
+                    <img src="../img/interface/like.png" alt="coeur">
+                    <div class="vie">
+                        <div class="stats"></div>
+                    </div>
+                </div>
+                <div class="eaucontainer">
+                    <img src="../img/interface/drop.png" alt="eau">
+                    <div class="eau">
+                        <div class="stats"></div>
+                    </div>
+                </div>
+                <div class="o2container">
+                    <img src="../img/interface/o2.png" alt="o2">
+                    <div class="o2">
+                        <div class="stats"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/JS P.js"></script>
+    </body>
+</html>
